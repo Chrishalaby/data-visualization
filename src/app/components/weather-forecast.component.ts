@@ -1,5 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+  Component,
+  OnInit,
+} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ChartModule } from 'primeng/chart';
 import { DropdownModule } from 'primeng/dropdown';
@@ -220,7 +225,10 @@ export class WeatherForecastComponent implements OnInit {
     'Zimbabwe',
   ];
 
-  constructor(private dataService: DataService) {}
+  constructor(
+    private dataService: DataService,
+    private readonly cdr: ChangeDetectorRef
+  ) {}
 
   ngOnInit() {
     this.getCountryWeatherData();
@@ -238,6 +246,7 @@ export class WeatherForecastComponent implements OnInit {
           },
         ],
       };
+      this.cdr.detectChanges();
     });
   }
 }
