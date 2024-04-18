@@ -4,11 +4,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 @Component({
   selector: 'app-climate-change',
   standalone: true,
-  imports: [
-    CommonModule,
-  ],
+  imports: [CommonModule],
   template: `<p>climate-change works!</p>`,
-  styleUrl: './climate-change.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ClimateChangeComponent { }
+export class ClimateChangeComponent {}

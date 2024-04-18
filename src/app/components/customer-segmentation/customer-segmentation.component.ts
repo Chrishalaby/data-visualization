@@ -4,11 +4,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 @Component({
   selector: 'app-customer-segmentation',
   standalone: true,
-  imports: [
-    CommonModule,
-  ],
+  imports: [CommonModule],
   template: `<p>customer-segmentation works!</p>`,
-  styleUrl: './customer-segmentation.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CustomerSegmentationComponent { }
+export class CustomerSegmentationComponent {}
