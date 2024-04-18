@@ -19,6 +19,7 @@ import { DataService } from '../DataService.service';
       [options]="countries"
       [(ngModel)]="selectedCountry"
       placeholder="Select a country"
+      (onChange)="getCountryWeatherData()"
     ></p-dropdown>
     <p-chart type="bar" [data]="weatherData"></p-chart> `,
   changeDetection: ChangeDetectionStrategy.OnPush,
