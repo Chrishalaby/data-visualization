@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TabViewModule } from 'primeng/tabview';
-import { ClimateChangeComponent } from './components/climate-change/climate-change.component';
-import { CovidChartsComponent } from './components/covid-charts/covid-charts.component';
-import { CustomerSegmentationComponent } from './components/customer-segmentation/customer-segmentation.component';
-import { SentimentAnalysisComponent } from './components/sentiment-analysis/sentiment-analysis.component';
-import { StockMarketComponent } from './components/stock-market/stock-market.component';
+import { CovidChartsComponent } from './components/covid-charts.component';
+import { GitHubReposComponent } from './components/github-repos.component';
+import { ProgrammingLanguageStatsComponent } from './components/programming-lang-stats.component';
+import { RandomUserComponent } from './components/random-user.component';
+import { WeatherForecastComponent } from './components/weather-forecast.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -14,11 +14,11 @@ import { StockMarketComponent } from './components/stock-market/stock-market.com
   imports: [
     RouterOutlet,
     TabViewModule,
+    WeatherForecastComponent,
+    GitHubReposComponent,
+    RandomUserComponent,
     CovidChartsComponent,
-    StockMarketComponent,
-    ClimateChangeComponent,
-    SentimentAnalysisComponent,
-    CustomerSegmentationComponent,
+    ProgrammingLanguageStatsComponent,
   ],
 })
 export class AppComponent {
