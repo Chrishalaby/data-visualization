@@ -42,7 +42,9 @@ import { DataService } from '../DataService.service';
       </ng-template>
       <ng-template pTemplate="body" let-repo>
         <tr>
-          <td>{{ repo.name }}</td>
+          <td>
+            <a [href]="repo.html_url" target="_blank">{{ repo.name }}</a>
+          </td>
           <td>{{ repo.description }}</td>
           <td>{{ repo.language }}</td>
           <td>{{ repo.stargazers_count }}</td>
