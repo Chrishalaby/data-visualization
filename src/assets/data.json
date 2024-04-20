@@ -1,0 +1,473 @@
+{
+  "languages": [
+    {
+      "name": "Python",
+      "share": 28.43,
+      "trend": 0.7
+    },
+    {
+      "name": "Java",
+      "share": 16.04,
+      "trend": -0.1
+    },
+    {
+      "name": "JavaScript",
+      "share": 8.72,
+      "trend": -0.8
+    },
+    {
+      "name": "C/C++",
+      "share": 6.65,
+      "trend": 0.2
+    },
+    {
+      "name": "C#",
+      "share": 6.63,
+      "trend": -0.2
+    },
+    {
+      "name": "R",
+      "share": 4.63,
+      "trend": 0.2
+    },
+    {
+      "name": "PHP",
+      "share": 4.45,
+      "trend": -0.7
+    },
+    {
+      "name": "TypeScript",
+      "share": 2.96,
+      "trend": 0.0
+    },
+    {
+      "name": "Swift",
+      "share": 2.71,
+      "trend": 0.4
+    },
+    {
+      "name": "Rust",
+      "share": 2.53,
+      "trend": 0.4
+    },
+    {
+      "name": "Objective-C",
+      "share": 2.43,
+      "trend": 0.3
+    },
+    {
+      "name": "Go",
+      "share": 2.16,
+      "trend": 0.2
+    },
+    {
+      "name": "Kotlin",
+      "share": 1.93,
+      "trend": 0.0
+    },
+    {
+      "name": "Matlab",
+      "share": 1.54,
+      "trend": -0.1
+    },
+    {
+      "name": "Dart",
+      "share": 1.01,
+      "trend": 0.2
+    },
+    {
+      "name": "Ada",
+      "share": 0.99,
+      "trend": 0.0
+    },
+    {
+      "name": "Ruby",
+      "share": 0.97,
+      "trend": -0.1
+    },
+    {
+      "name": "VBA",
+      "share": 0.91,
+      "trend": 0.0
+    },
+    {
+      "name": "Powershell",
+      "share": 0.76,
+      "trend": -0.2
+    },
+    {
+      "name": "Lua",
+      "share": 0.61,
+      "trend": 0.0
+    },
+    {
+      "name": "Abap",
+      "share": 0.6,
+      "trend": 0.1
+    },
+    {
+      "name": "Scala",
+      "share": 0.58,
+      "trend": -0.1
+    },
+    {
+      "name": "Visual Basic",
+      "share": 0.42,
+      "trend": -0.2
+    },
+    {
+      "name": "Groovy",
+      "share": 0.35,
+      "trend": 0.0
+    },
+    {
+      "name": "Julia",
+      "share": 0.33,
+      "trend": -0.1
+    },
+    {
+      "name": "Perl",
+      "share": 0.22,
+      "trend": -0.1
+    },
+    {
+      "name": "Haskell",
+      "share": 0.17,
+      "trend": -0.1
+    },
+    {
+      "name": "Cobol",
+      "share": 0.14,
+      "trend": -0.2
+    },
+    {
+      "name": "Delphi/Pascal",
+      "share": 0.13,
+      "trend": 0.0
+    }
+  ],
+  "ides": [
+    {
+      "name": "Visual Studio",
+      "share": 28.3,
+      "trend": 0.2
+    },
+    {
+      "name": "Visual Studio Code",
+      "share": 13.66,
+      "trend": -0.2
+    },
+    {
+      "name": "Eclipse",
+      "share": 10.88,
+      "trend": -1.0
+    },
+    {
+      "name": "PyCharm",
+      "share": 10.71,
+      "trend": 2.1
+    },
+    {
+      "name": "Android Studio",
+      "share": 9.57,
+      "trend": 0.8
+    },
+    {
+      "name": "IntelliJ",
+      "share": 7.37,
+      "trend": 0.6
+    },
+    {
+      "name": "NetBeans",
+      "share": 4.11,
+      "trend": -0.3
+    },
+    {
+      "name": "Xcode",
+      "share": 3.03,
+      "trend": 0.2
+    },
+    {
+      "name": "RStudio",
+      "share": 2.83,
+      "trend": -0.6
+    },
+    {
+      "name": "Sublime Text",
+      "share": 2.63,
+      "trend": -0.6
+    },
+    {
+      "name": "Atom",
+      "share": 2.55,
+      "trend": -0.7
+    },
+    {
+      "name": "Code::Blocks",
+      "share": 1.75,
+      "trend": -0.1
+    },
+    {
+      "name": "Vim",
+      "share": 0.91,
+      "trend": 0.0
+    },
+    {
+      "name": "PhpStorm",
+      "share": 0.4,
+      "trend": 0.0
+    },
+    {
+      "name": "Qt Creator",
+      "share": 0.29,
+      "trend": 0.1
+    },
+    {
+      "name": "Geany",
+      "share": 0.23,
+      "trend": 0.1
+    },
+    {
+      "name": "Xamarin",
+      "share": 0.16,
+      "trend": -0.1
+    },
+    {
+      "name": "Komodo",
+      "share": 0.16,
+      "trend": -0.1
+    },
+    {
+      "name": "Emacs",
+      "share": 0.16,
+      "trend": 0.0
+    },
+    {
+      "name": "Light Table",
+      "share": 0.07,
+      "trend": 0.0
+    },
+    {
+      "name": "JDeveloper",
+      "share": 0.06,
+      "trend": 0.0
+    },
+    {
+      "name": "RAD Studio",
+      "share": 0.04,
+      "trend": 0.0
+    },
+    {
+      "name": "MonoDevelop",
+      "share": 0.02,
+      "trend": 0.0
+    },
+    {
+      "name": "JCreator",
+      "share": 0.02,
+      "trend": 0.0
+    },
+    {
+      "name": "Monkey Studio",
+      "share": 0.02,
+      "trend": 0.0
+    },
+    {
+      "name": "DrJava",
+      "share": 0.01,
+      "trend": 0.0
+    },
+    {
+      "name": "SharpDevelop",
+      "share": 0.01,
+      "trend": 0.0
+    },
+    {
+      "name": "Julia Studio",
+      "share": 0.01,
+      "trend": 0.0
+    },
+    {
+      "name": "RubyMine",
+      "share": 0.01,
+      "trend": 0.0
+    },
+    {
+      "name": "Zend Studio",
+      "share": 0.01,
+      "trend": 0.0
+    },
+    {
+      "name": "Coda 2",
+      "share": 0.01,
+      "trend": 0.0
+    },
+    {
+      "name": "Eric Python",
+      "share": 0.01,
+      "trend": 0.0
+    },
+    {
+      "name": "Aptana",
+      "share": 0.01,
+      "trend": 0.0
+    },
+    {
+      "name": "SlickEdit",
+      "share": 0.0,
+      "trend": 0.0
+    }
+  ],
+  "databases": [
+    {
+      "name": "Oracle",
+      "share": 23.66,
+      "trend": 3.9
+    },
+    {
+      "name": "MySQL",
+      "share": 14.48,
+      "trend": 0.2
+    },
+    {
+      "name": "SQL Server",
+      "share": 9.56,
+      "trend": 0.3
+    },
+    {
+      "name": "MongoDB",
+      "share": 6.41,
+      "trend": -0.1
+    },
+    {
+      "name": "PostgreSQL",
+      "share": 5.89,
+      "trend": 0.9
+    },
+    {
+      "name": "Firebase",
+      "share": 5.57,
+      "trend": -0.2
+    },
+    {
+      "name": "Microsoft Access",
+      "share": 5.1,
+      "trend": -0.2
+    },
+    {
+      "name": "Redis",
+      "share": 4.62,
+      "trend": -0.3
+    },
+    {
+      "name": "Splunk",
+      "share": 4.06,
+      "trend": -0.5
+    },
+    {
+      "name": "SQLite",
+      "share": 3.44,
+      "trend": -0.3
+    },
+    {
+      "name": "Elasticsearch",
+      "share": 3.28,
+      "trend": -0.8
+    },
+    {
+      "name": "MariaDB",
+      "share": 2.45,
+      "trend": -0.3
+    },
+    {
+      "name": "DynamoDB",
+      "share": 1.77,
+      "trend": -0.6
+    },
+    {
+      "name": "SAP HANA",
+      "share": 1.76,
+      "trend": -0.1
+    },
+    {
+      "name": "DB2",
+      "share": 1.64,
+      "trend": -0.3
+    },
+    {
+      "name": "Apache Hive",
+      "share": 1.34,
+      "trend": -0.6
+    },
+    {
+      "name": "Neo4j",
+      "share": 0.85,
+      "trend": -0.1
+    },
+    {
+      "name": "FileMaker",
+      "share": 0.74,
+      "trend": -0.1
+    },
+    {
+      "name": "Solr",
+      "share": 0.68,
+      "trend": -0.1
+    },
+    {
+      "name": "Ingres",
+      "share": 0.45,
+      "trend": -0.1
+    },
+    {
+      "name": "Firebird",
+      "share": 0.44,
+      "trend": -0.1
+    },
+    {
+      "name": "Sybase",
+      "share": 0.38,
+      "trend": -0.1
+    },
+    {
+      "name": "Hbase",
+      "share": 0.27,
+      "trend": -0.1
+    },
+    {
+      "name": "CouchBase",
+      "share": 0.24,
+      "trend": -0.1
+    },
+    {
+      "name": "Memcached",
+      "share": 0.23,
+      "trend": 0.0
+    },
+    {
+      "name": "Riak",
+      "share": 0.22,
+      "trend": 0.0
+    },
+    {
+      "name": "Informix",
+      "share": 0.19,
+      "trend": 0.0
+    },
+    {
+      "name": "CouchDB",
+      "share": 0.11,
+      "trend": 0.0
+    },
+    {
+      "name": "dBase",
+      "share": 0.08,
+      "trend": 0.0
+    },
+    {
+      "name": "Netezza",
+      "share": 0.07,
+      "trend": 0.0
+    }
+  ]
+}

@@ -56,4 +56,8 @@ export class DataService {
   getGitHubLangStats(): Observable<any> {
     return this.http.get(this.apiUrl);
   }
+
+  getData(): Observable<any> {
+    return this.http.get<any>('assets/data.json');
+  }
 }

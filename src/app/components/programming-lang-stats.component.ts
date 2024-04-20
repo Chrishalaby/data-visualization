@@ -1,69 +1,112 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+  Component,
+  OnInit,
+} from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { ChartModule } from 'primeng/chart';
+import { SelectButtonModule } from 'primeng/selectbutton';
 import { DataService } from '../DataService.service';
 
 @Component({
   selector: 'app-programming-language-stats',
   standalone: true,
-  imports: [CommonModule, ChartModule],
-  template: ` <h3>under work</h3> `,
-  styles: [
-    `
-      .chart-container {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-      }
-    `,
-  ],
+  imports: [CommonModule, ChartModule, SelectButtonModule, FormsModule],
+  template: `
+    <div>
+      <p-selectButton
+        [options]="chartTypes"
+        [(ngModel)]="selectedChartType"
+        (onChange)="updateChart()"
+      ></p-selectButton>
+      <p-selectButton
+        [options]="dataTypes"
+        [(ngModel)]="selectedDataType"
+        (onChange)="updateChart()"
+      ></p-selectButton>
+      <span>
+        @if (selectedChartType == 'bar') {
+        <p-chart
+          type="bar"
+          [data]="chartData"
+          [options]="chartOptions"
+        ></p-chart>
+
+        } @else if (selectedChartType == 'pie') {
+        <p-chart
+          type="pie"
+          [data]="chartData"
+          [options]="chartOptions"
+          height="800px"
+        ></p-chart>
+        } @else if (selectedChartType == 'line') {
+        <p-chart
+          type="line"
+          [data]="chartData"
+          [options]="chartOptions"
+        ></p-chart>
+        }
+      </span>
+    </div>
+  `,
+  styles: [],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ProgrammingLanguageStatsComponent {
-  pieChartData: any;
-  barChartData: any;
-  // <!-- <div *ngIf="pieChartData">
-  //   <h4>GitHub Programming Language Statistics</h4>
-  //   <p-chart type="pie" [data]="pieChartData"></p-chart>
-  // </div>
-  // <div *ngIf="barChartData">
-  //   <p-chart type="bar" [data]="barChartData"></p-chart>
-  // </div> -->
-  constructor(private dataService: DataService) {}
+export class ProgrammingLanguageStatsComponent implements OnInit {
+  chartTypes = ['bar', 'pie', 'line'];
+  dataTypes = ['languages', 'ides', 'databases'];
+  selectedChartType = 'bar';
+  selectedDataType = 'languages';
+  chartData: any;
+  chartOptions: any;
 
-  // ngOnInit() {
-  //   this.dataService.getGitHubLangStats().subscribe((data: any) => {
-  //     const languageData = data.langStats.languages;
+  constructor(
+    private dataService: DataService,
+    private readonly cdr: ChangeDetectorRef
+  ) {}
 
-  //     this.pieChartData = {
-  //       labels: languageData.map((lang: any) => lang.language),
-  //       datasets: [
-  //         {
-  //           data: languageData.map((lang: any) => lang.count),
-  //           backgroundColor: this.generateColors(languageData.length),
-  //         },
-  //       ],
-  //     };
+  ngOnInit() {
+    this.updateChart();
+  }
 
-  //     this.barChartData = {
-  //       labels: languageData.map((lang: any) => lang.language),
-  //       datasets: [
-  //         {
-  //           label: 'Repositories',
-  //           backgroundColor: this.generateColors(languageData.length),
-  //           data: languageData.map((lang: any) => lang.count),
-  //         },
-  //       ],
-  //     };
-  //   });
-  // }
-
-  // generateColors(count: number): string[] {
-  //   const colors: string[] = [];
-  //   for (let i = 0; i < count; i++) {
-  //     const color = '#' + Math.floor(Math.random() * 16777215).toString(16);
-  //     colors.push(color);
-  //   }
-  //   return colors;
-  // }
+  updateChart() {
+    this.dataService.getData().subscribe((data) => {
+      const selectedData = data[this.selectedDataType];
+      this.chartData = {
+        labels: selectedData.map((item: any) => item.name),
+        datasets: [
+          {
+            label: 'Share',
+            data: selectedData.map((item: any) => item.share),
+          },
+          {
+            label: 'Trend',
+            data: selectedData.map((item: any) => item.trend),
+          },
+        ],
+      };
+      this.chartOptions = {
+        responsive: true,
+        scales: {
+          x: {
+            display: true,
+            title: {
+              display: true,
+              text: 'Name',
+            },
+          },
+          y: {
+            display: true,
+            title: {
+              display: true,
+              text: 'Value',
+            },
+          },
+        },
+      };
+      this.cdr.detectChanges();
+    });
+  }
 }
