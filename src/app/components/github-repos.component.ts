@@ -52,6 +52,7 @@ import { DataService } from '../DataService.service';
         </tr>
       </ng-template>
     </p-table>
+    <p>Source: <a href="https://github.com" target="_blank">Github</a></p>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

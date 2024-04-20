@@ -49,6 +49,13 @@ import { DataService } from '../DataService.service';
         ></p-chart>
         }
       </span>
+
+      <p>
+        Source:
+        <a href="https://pypl.github.io/PYPL.html" target="_blank"
+          >pypl.github.io</a
+        >
+      </p>
     </div>
   `,
   styles: [],

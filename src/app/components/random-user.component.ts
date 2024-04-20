@@ -24,6 +24,9 @@ import { DataService } from '../DataService.service';
       <p>Email: {{ user.email }}</p>
       <p>Phone: {{ user.phone }}</p>
     </p-card>
+    <p>
+      Source: <a href="https://randomuser.me" target="_blank">randomuser.me</a>
+    </p>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

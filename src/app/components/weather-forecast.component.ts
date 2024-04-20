@@ -21,7 +21,11 @@ import { DataService } from '../DataService.service';
       placeholder="Select a country"
       (onChange)="getCountryWeatherData()"
     ></p-dropdown>
-    <p-chart type="bar" [data]="weatherData"></p-chart> `,
+    <p-chart type="bar" [data]="weatherData"></p-chart>
+    <p>
+      Source:
+      <a href="https://openweathermap.org" target="_blank">Open Weather Map</a>
+    </p> `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class WeatherForecastComponent implements OnInit {

@@ -10,6 +10,7 @@ import { DataService } from '../DataService.service';
   standalone: true,
   imports: [CommonModule, ChartModule, DropdownModule, FormsModule],
   template: `
+    <h2>COVID-19 Cases</h2>
     <p-dropdown
       [options]="chartOptions"
       [(ngModel)]="selectedChartType"
@@ -21,6 +22,10 @@ import { DataService } from '../DataService.service';
       [data]="chartData"
       [options]="chartOptions"
     ></p-chart>
+    <p>
+      Source:
+      <a href="https://covidtracking.com" target="_blank">Covid Tracking</a>
+    </p>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

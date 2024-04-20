@@ -58,6 +58,7 @@ export class DataService {
   }
 
   getData(): Observable<any> {
+    // Data from https://pypl.github.io/PYPL.html
     return this.http.get<any>('assets/data.json');
   }
 }
