@@ -85,11 +85,11 @@ export class ProgrammingLanguageStatsComponent implements OnInit {
         labels: selectedData.map((item: any) => item.name),
         datasets: [
           {
-            label: 'Share',
+            label: 'Share %',
             data: selectedData.map((item: any) => item.share),
           },
           {
-            label: 'Trend',
+            label: '1 Year Trend %',
             data: selectedData.map((item: any) => item.trend),
           },
         ],
